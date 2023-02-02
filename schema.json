@@ -1,0 +1,18 @@
+{
+  "definitions": {
+    "Config": {
+      "title": "Config",
+      "type": "object",
+      "properties": {
+        "port": {
+          "title": "Port Number",
+          "description": "The port number to run Prodigy",
+          "default": 8888,
+          "minimum": 0,
+          "maximum": 65535,
+          "type": "integer"
+        }
+      }
+    }
+  }
+}
