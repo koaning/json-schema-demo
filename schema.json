@@ -1,18 +1,28 @@
 {
-  "definitions": {
-    "Config": {
-      "title": "Config",
-      "type": "object",
-      "properties": {
-        "port": {
-          "title": "Port Number",
-          "description": "The port number to run Prodigy",
-          "default": 8888,
-          "minimum": 0,
-          "maximum": 65535,
-          "type": "integer"
-        }
+    "title": "Config",
+    "type": "object",
+    "properties": {
+      "port": {
+        "title": "Port Number",
+        "description": "The port number to run Prodigy",
+        "default": 8080,
+        "minimum": 0,
+        "maximum": 65535,
+        "type": "integer"
+      },
+      "host": {
+        "title": "Host",
+        "description": "The host to run Prodigy",
+        "default": "localhost",
+        "type": "string"
+      },
+      "feed_overlap": {
+        "title": "Feed Overlap",
+        "description": "Allow feed overlap",
+        "default": true,
+        "type": "boolean"
       }
     }
   }
-}
+  
+  
